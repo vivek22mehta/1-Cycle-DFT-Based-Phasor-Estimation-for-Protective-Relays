@@ -1,4 +1,4 @@
-# Protection-relay
+# 1-Cycle DFT Based Phasor Estimation for Protective Relays
 
 This code is an efficient sandbox for experimenting with how defensive relays react to various short-circuit situations on a three-phase power system. By allowing the user to select from single-line-to-ground, line-to-line, double-line-to-ground, or three-phase faults—and by defining when the fault occurs, for how long it persists, and how intense it is—the program can simulate nearly any traditional fault situation. It then "measures" the ensuing currents with increased noise, takes their phasors each sample with a one-cycle discrete Fourier transform, and inputs them to a definite-time over-current relay model. The relay's pick-up level is established as a multiple of the pre-fault current, and a short intentional delay provides against momentary transients giving rise to a nuisance trip.
 
